@@ -2,6 +2,7 @@ include(InstallRequiredSystemLibraries)
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "solver_application")
 set(CPACK_PACKAGE_NAME "solver_application")
 option(GENERATOR "")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Totrg")
 install(FILES equation.cpp
       ../formatter_lib/formatter.cpp
       ../formatter_ex_lib/formatter_ex.cpp
