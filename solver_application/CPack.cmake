@@ -10,5 +10,5 @@ install(FILES equation.cpp
       ../hello_world_application/hello_world.cpp
 	DESTINATION code)
 install(TARGETS formatter_ex solver_lib LIBRARY DESTINATION lib)
-install(TARGETS solver DESTINATION bin)
+install(TARGETS solver_application DESTINATION bin)
 include(CPack)
