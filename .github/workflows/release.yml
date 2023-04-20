@@ -114,7 +114,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with: 
        upload_url: ${{ needs.Make_GitHub_Release.outputs.upload_url }}
-       asset_path: ./cmake/solver-0.1.1-win64.msi
+       asset_path: ./cmake/solver_application-0.1.1-win64.msi
        asset_name: solver_app-${{ github.ref_name }}.msi
        asset_content_type: application/msi
   MacOs_Binary:    
@@ -139,6 +139,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with: 
           upload_url: ${{ needs.Make_GitHub_Release.outputs.upload_url }}
-          asset_path: ./cmake/solver-0.1.1-Darwin.dmg
+          asset_path: ./cmake/solver_application-0.1.1-Darwin.dmg
           asset_name: solver_app-${{ github.ref_name }}.dmg
           asset_content_type: application/dmg
