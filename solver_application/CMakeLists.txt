@@ -7,3 +7,4 @@ add_library(solver_lib STATIC ${CMAKE_CURRENT_LIST_DIR}/../solver_lib/solver.cpp
 include_directories(${CMAKE_CURRENT_LIST_DIR}/../solver_lib)
 add_executable(solver_application ${CMAKE_CURRENT_LIST_DIR}/equation.cpp)
 target_link_libraries(solver_application formatter_ex solver_lib)
+include(CPack.cmake)
