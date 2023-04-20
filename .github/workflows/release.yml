@@ -43,7 +43,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with: 
        upload_url: ${{ needs.Make_GitHub_Release.outputs.upload_url }}
-       asset_path: ./cmake/solver-0.1.1-Linux.tar.gz
+       asset_path: ./cmake/solver_application-0.1.1-Linux.tar.gz
        asset_name: Solver-${{ github.ref_name }}.tar.gz
        asset_content_type: code/tgz
     - name: Upload ZIP
@@ -53,7 +53,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with: 
        upload_url: ${{ needs.Make_GitHub_Release.outputs.upload_url }}
-       asset_path: ./cmake/solver-0.1.1-Linux.zip
+       asset_path: ./cmake/solver_application-0.1.1-Linux.zip
        asset_name: Solver-${{ github.ref_name }}.zip
        asset_content_type: code/zip
   Linux_Binary:
@@ -80,7 +80,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with: 
        upload_url: ${{ needs.Make_GitHub_Release.outputs.upload_url }}
-       asset_path: ./cmake/solver-0.1.1-Linux.deb
+       asset_path: ./cmake/solver_application-0.1.1-Linux.deb
        asset_name: solver_app-${{ github.ref_name }}.deb
        asset_content_type: application/deb
     - name: Upload RPM
@@ -90,7 +90,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with: 
        upload_url: ${{ needs.Make_GitHub_Release.outputs.upload_url }}
-       asset_path: ./cmake/solver-0.1.1-Linux.rpm
+       asset_path: ./cmake/solver_application-0.1.1-Linux.rpm
        asset_name: solver_app-${{ github.ref_name }}.rpm
        asset_content_type: application/rpm
   Windows_Binary:
